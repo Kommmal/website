@@ -1,0 +1,49 @@
+.hero-container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    color: white;
+}
+.hero-container .hero-left{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    width: 30%;
+}
+.hero-right{
+    display: flex;
+    justify-content: end;
+    width: 70%;
+}
+.hero-left h1 {
+    font-size: 4vw;
+}
+.hero-left p{
+    font-size: 1.5vw;
+}
+.hero-left .button button {
+    width: 100%;
+    padding:  10px 0;
+    background: white;
+    border: white;
+    border-radius: 10px;
+}
+@media (min-width:360px) {
+    .hero-container{
+        display: flex;
+        align-items: center;
+    }
+    .hero-right img {
+        width: 150px; ;
+    }
+}
+@media (min-width:768px) {
+    .hero-container{
+        display: flex;
+        align-items: center;
+    }
+    .hero-right img {
+        width: 300px; ;
+    }
+}

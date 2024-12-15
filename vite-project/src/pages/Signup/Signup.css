@@ -1,0 +1,99 @@
+.signup-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 88vh;
+ 
+}
+.signup-left{
+    color: white;
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+ 
+}
+.signup-right {
+    width: 40%;
+    display: flex;
+    align-content: center;
+    height: 90%;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input input{
+    width: 100%;
+    padding: 10px ;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.signup-container .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+.signup-container .buttons .btn1{
+    padding: 10px 40px;
+    background: white;
+    border: white;
+}
+.signup-container .buttons .btn2{
+    padding: 10px 40px;
+    background: white;
+    border: white;
+}
+.signup-left .signup{
+    text-align: center;
+}
+.signup-left .signup a{
+    text-decoration: underline;
+    color: white;
+
+}
+@media (min-width:360px) {
+    .signup-right {
+     display: none;
+    }
+    .signup-left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .signup-left .buttons .btn1{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .signup-left .buttons .btn2{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+@media (min-width:768px) {
+    .signup-right {
+     display: block;
+    }
+
+    .signup-left{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+    .signup-left .buttons .btn1{
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    .signup-left .buttons .btn2{
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,87 @@
+.login-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 88vh;
+ 
+}
+.login-left{
+    color: white;
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+ 
+}
+
+.login-right {
+    width: 40%;
+    display: flex;
+    align-content: center;
+    height: 90%;
+}
+.input{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input input{
+    width: 100%;
+    padding: 10px ;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.login-container .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+.login-container .buttons .btn1{
+    padding: 10px 40px;
+    background: white;
+    border: white;
+}
+.login-container .buttons .btn2{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.login-left .signup{
+    text-align: center;
+}
+.login-left .signup a{
+    text-decoration: underline;
+    color: white;
+
+}
+@media (min-width:360px) {
+    .login-right {
+     display: none;
+    }
+    .login-left{
+        display: flex;
+       
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (min-width:768px) {
+    .login-right {
+     display: block;
+    }
+    .login-right img{
+    }
+    .login-left{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+}
